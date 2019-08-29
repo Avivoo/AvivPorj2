@@ -21,6 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+app.use(express.static('public'))
 //--Creating DB--//
 const url = "mongodb://localhost:27017/AvivProject";
 mongoose.connect(url, { useNewUrlParser: true });
