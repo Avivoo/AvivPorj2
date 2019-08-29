@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static('public'))
 //--Creating DB--//
-const url = "mongodb+srv://avivos:12345aviv!@#@cluster0-nsojo.mongodb.net/test?retryWrites=true&w=majority";
+const url = "mongodb+srv://avivos:25nzh5TH@cluster0-nsojo.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(url, { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
